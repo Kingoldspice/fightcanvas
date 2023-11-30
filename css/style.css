@@ -1,35 +1,186 @@
-h1{font-family: 'Shojumaru', cursive;
-   
+
+
+body,html {
+  width: 100%;
+  height: 100%;
+  background-repeat:repeat-y;
+  background-size:cover;
 }
 
-body{ 
-    
-    background-image: url("../image/background.png");
-    background-repeat: no-repeat;
-    background-size:cover;
+body{
+  background-image: url(../image/Background2.png);
+
 }
 
 
 
+.text {
+  font-family: 'Shojumaru', cursive;
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
+}
+
+@font-face {
+  font-family: Shojumaru;
+  src: url(../fonts/Shojumaru-Regular.ttf);
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: auto;
+}
+
+h1:hover {
+  -webkit-text-stroke-color: yellow;
+  -webkit-text-fill-color: red;
+}
+
+
+li {
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  -webkit-text-stroke-color:yellow;
+  -webkit-text-fill-color: red;
+}
+
+
+.list-container {
+  text-align: center;
+  /* To center-align the lists */
+}
+
+.list {
+  list-style: none;
+  /* Remove bullet points for unordered lists */
+  display: inline-block;
+  margin: 0 10px;
+  /* Adjust the margin to separate the lists */
+}
+
+.photo-container {
+  background: black;
+  height: 110%;
+  width: 35%;
+  border-radius: 50px;
+  justify-content: center;
+ 
+}
+
+.container-container{
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /*border: solid red 2px;*/
+ /* overflow-y: auto;*/
+}
+
+.image{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 10px;
+  transition: ease 2s
+}
+.image-size{
+  height: 80%;
+  width: 100%;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-size:hover{
+  filter: drop-shadow(10px 10px 4px #4444dd);
+
+}
+
+.shape-container{
+  position: center;
+  width: 200px;
+  height: 200px;
+  
+
+}
+
+
+
+.text-on-shape{
+  position: center;
+  margin-right:20 px ;
+  font-family: 'Shojumaru', cursive;
+  font-size: 45px;
+  -webkit-text-stroke: 4px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
+  border-radius: 50px;
+  
+
+}
+
+.shape2{
+  position: absolute;
+  box-align: center;
+  font-family: 'Shojumaru', cursive;
+  font-size: 40px;
+  -webkit-text-stroke: 3px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
+  background-color:darkgrey;
+  border-radius: 50px;
+}
+
+.home-button{
+  text-align:center;
+  border: none;
+
+
+}
+
+.text2{
+  font-family: 'Shojumaru', cursive;
+  font-size: 50px;
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
+}
+
+.text3{
+  
+  margin-right: 20px;
+  font-family: 'Shojumaru', cursive;
+  font-size: 50px;
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
 }
  
-  
-/* #myImage{ 
-    display: none;
-} */
+.shape{
+  position: absolute;  
+  width: 35%;
+  height: 45%;
+  transition: 1s;
 
-    
-h1{
-    font-size: 100px
-        
-
-       
 }
 
-
-li{
-    font-family: 'Shojumaru', cursive;
-    font-size: 100px
+.shape:hover{
+  width: 45%;
+  height: 55%;
 }
+/*
+#myimage{
+  width: 35%;
+  height: 35%;
+}
+*/
 
-    
+
+
